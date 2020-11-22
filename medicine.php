@@ -72,7 +72,7 @@
                                 <div class="shopping-card">
                                     <i class="fa fa-shopping-cart"></i>
                                     
-                                </div>
+                                </div>klfijwo;
                                 <a href="cart-list.php">Shopping Cart</a>
                             </div>
                         </div>
