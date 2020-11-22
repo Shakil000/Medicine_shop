@@ -1,0 +1,31 @@
+.selected{
+	margin-top: 3%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+.card:hover{
+	-webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+	box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+}
+.card img{
+	height: 18rem;
+	width: 22rem;
+}
+.col-md-3{
+	margin-bottom: 6px;
+}
+.card-body{
+	padding: 2.25rem;
+}
+.btn{
+	padding: 1.375rem 1.75rem;
+	font-size: 13px;
+}
+.card-body p{
+	font-size: 14px;
+}
+.card-body h5{
+	font-size: 15px;
+	font-weight: bold;
+}

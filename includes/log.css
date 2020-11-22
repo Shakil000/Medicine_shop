@@ -1,0 +1,84 @@
+
+#frame {
+            width: 450px;
+            margin: auto;
+            margin-top: 70px;
+            border: solid 1px #CCC; /* SOME CSS3 DIV SHADOW */
+            -webkit-box-shadow: 0px 0px 10px #CCC;
+            -moz-box-shadow: 0px 0px 10px #CCC;
+            box-shadow: 0px 0px 10px #CCC; /* CSS3 ROUNDED CORNERS */
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            border-radius: 5px;
+            background-color: #FFF;
+        }
+  #frame h1 {
+            text-align: center;
+            margin-top: 5%;
+        }
+          #frame form {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    
+input[type=submit] {
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 8px 14px;
+    margin: 7px 166px;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.content {
+max-width:500px;
+margin: auto;
+margin-top: 8%;
+
+}
+
+/* Full-width input fields */
+  .box {
+  width: 77%;;
+  padding: 12px;
+  margin: 0px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+      border-radius: 5px;
+      font-size: 14px;
+}
+
+.box:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.content a{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: black ;
+}
+.content a:hover{
+  color: darkgrey;
+}
