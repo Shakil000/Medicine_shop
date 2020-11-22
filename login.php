@@ -56,12 +56,12 @@ if (isset($_SESSION['customer'])) {
     <link rel="stylesheet" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="includes/log.css">
 
-	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
-<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="includes/style.css">
     <script src="bootstrap/js/3.3.1.slim.min.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
@@ -77,28 +77,31 @@ if (isset($_SESSION['customer'])) {
 <section>
     <header class="header-section">
         <div class="header-top">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-3">
                         <!-- logo -->
                         <a href="index.php" class="site-logo">
                             <div class="logo">
-                        <div><img src="images/logo.png" alt="image"/></div>
+                        <div class="logo"> <a href="index.php"><img src="images/logo.png" alt="image"/></a> </div>
                     </div>
                         </a>
                     </div>
+
                     <div class="col-md-4">
                             <form class="header-search-form" action="search.php" method="get">
                             <input type="text" name="search_word" placeholder="Search for medicine ....">
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
+
                     <div class="col-md-5">
                         <div class="user-panel">
                             <div class="up-item">
                                 <div class="shopping-card">
                                     <i class="fa fa-shopping-cart"></i>
-                                                                    </div>
+                                    
+                                </div>
                                 <a href="cart-list.php">Shopping Cart</a>
                             </div>
                         </div>
@@ -108,35 +111,36 @@ if (isset($_SESSION['customer'])) {
         </div>
     </header>
     </section>
-<section class="mainmenu-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="menu">
-                        <ul>
-                            <li><a href="index.php">Home</a></li>
+    <section class="mainmenu-area">
+		<div class="">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="menu">
+						<ul class="d-flex justify-content-center">
+							<li><a href="index.php">Home</a></li>
                             <li><a href="medicine.php">Medicine</a></li>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="login.php">Upload Prescription</a></li>
+                            <li><a href="aboutus.php">About Us</a></li>
+							<li><a href="login.php">Upload Prescription</a></li>
                             <li>
                             <a href="my-account.php"> <?php if(isset($_SESSION['customer'])){
                                 ?>
                                 <?php
-                                 echo $_SESSION['customer']['name'];  ?></a>
+                                 echo $_SESSION['customer']['name'];?></a>
                                 <?php  
                             }else{
                                 ?>
                                 <a href="login.php">Sign in</a></a>
                             <?php }?></li>
-                
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </section>
+				
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
 
 
     <!--//*** Header Part**//-->

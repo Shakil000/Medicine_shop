@@ -11,7 +11,8 @@ session_start();
         
 
          if($quantity<1){
-            echo "<h1 style='color:red;text-align:center;margin:400px;font-size:500%;'>Please input a valid number</h1> ";
+            // echo "<h1 style='color:red;text-align:center;margin:400px;font-size:500%;'>Please input a valid number</h1> ";
+            header('location: medicine.php?result=wrongquantity');
            
         }else{
             if(!empty($quantity))
@@ -27,7 +28,27 @@ session_start();
             }
         }
 ?>
+<div >
+<!-- Make Back Button   -->
+<!-- <button 
+style=
+'color:Black;              
+margin-left:50%;
+margin-top:-15%;
+background-color: #4CAF50;
+border: none;
+color:white;
+text-decoration: none;
+cursor: pointer;
+font-size:200%;'
+><a href="medicine.php">Back</a></button> -->
+<div class="d-flex justify-content-center">
+<a href="medicine.php" class="btn btn-primary">Back</a>
+</div>
 
+
+</div>
+<!-- Finish Back Button  -->
 <div class="modal" id="closedBidModal">
                             <div class="modal-dialog">
                                 <div class="modal-content">

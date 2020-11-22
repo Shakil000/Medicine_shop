@@ -120,6 +120,17 @@
     <div class="section-header text-center">
       <h1 style="font-size: 70px">Find Your Medicine </h><h2>From Here</h2>
     </div>
+                       
+
+
+                           <?php
+                        if (isset($_GET['result'])) {
+                            if ($_GET['result'] == 'wrongquantity') {
+                                echo '<h1 style="color:red;text-align:center;">Please Input Valid Number</h1>';
+                            }
+                            
+                        }
+                        ?>
    <div class="container selected">
         <div class="row">
             <?php
@@ -139,7 +150,7 @@
                         <p class="card-text">Company: <?= $data['company']?></p>
                         <p class="card-text">Price:<b>&#2547;</b> <?= $data['price']?></p>
                         <form style="display: inline;" method="post" action="carts.php?id=<?= $data['id']?>">
-                            <input type="text" name="quantity" style="padding: 5px;width: 60%;font-size: 15px" placeholder="quantity"><br>
+                            <input type="number" name="quantity" style="padding: 5px;width: 60%;font-size: 15px" placeholder="quantity" required><br>
                             <input type="hidden" name="price" value="<?= $data['price']?>">
                             <input type="submit" class="btn btn-danger btn-sm" style="margin-top: 20px" name="submit" value="Add to Cart">
                         </form> 
