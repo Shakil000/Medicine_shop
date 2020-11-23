@@ -10,12 +10,13 @@ $page_header = "Upload Medicine ";
         $group = $_POST['group'];
         $power = $_POST['power'];
         $company = $_POST['company'];
-        $price = ($_POST['price']);
-        $code = ($_POST['code']);
-        $description = ($_POST['description']);
+        $price = $_POST['price'];
+        $exp_date = $_POST['exp_date'];
+        $code = $_POST['code'];
+        $description = $_POST['description'];
         $file_size = $_FILES['images']['size'];
 
-        if (!empty($medicine_name) && !empty($file_size) && !empty($company) && !empty($price) && !empty($description)) {
+        if (!empty($medicine_name) && !empty($file_size) && !empty($company) && !empty($price) && !empty($exp_date) && !empty($description)) {
 
 
             $target_dir = "images/";
@@ -32,7 +33,7 @@ $page_header = "Upload Medicine ";
             }
 
                 $all_image = serialize($images);
-                $sql = "INSERT INTO products(`medicine_name`, `group`,`power`, `images`, `company`, `price`, `description`,`code`)VALUES('$medicine_name', '$group', '$power', '$all_image', '$company',' $price','$description','$code')";
+                $sql = "INSERT INTO products(`medicine_name`, `group`,`power`, `images`, `company`, `price`,`exp_date`, `description`,`code`)VALUES('$medicine_name', '$group', '$power', '$all_image', '$company',' $price','$exp_date','$description','$code')";
                 
                 $count = $db->query($sql);
 
@@ -85,6 +86,11 @@ $page_header = "Upload Medicine ";
                         <div class="form-group">
                             <label for="">Price</label>
                             <input type="number" name="price" class="form-control" id="" placeholder="Enter Price/Piece">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Expire Date</label>
+                            <input type="date" name="exp_date" class="form-control" id="" placeholder="Enter Expire Date">
                         </div>
 
                         <div class="form-group">

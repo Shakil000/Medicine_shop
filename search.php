@@ -54,7 +54,7 @@
                         <!-- logo -->
                         <a href="index.php" class="site-logo">
                             <div class="logo">
-                        <h2>Fast Medicine</h2>
+                        <h2>Online Medicine Shop</h2>
                     </div>
                         </a>
                     </div>
@@ -90,7 +90,7 @@
                         <ul>
                             <li><a href="index.php">Home</a></li>
                             <li><a href="medicine.php">Medicine</a></li>
-                            <li><a href="">About Us</a></li>
+                            <li><a href="aboutus.php">About Us</a></li>
                             <li><a href="login.php">Upload Prescription</a></li>
                             <li>
                             <a href="my-account.php"> <?php if(isset($_SESSION['customer'])){

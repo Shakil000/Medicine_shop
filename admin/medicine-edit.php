@@ -20,6 +20,7 @@ $page_header = "Medicine Updation ";
         $power = $_POST['power'];
         $company = $_POST['company'];
         $price = $_POST['price'];
+        $exp_date = $_POST['exp_date'];
         $description = $_POST['description'];
         
 
@@ -49,7 +50,7 @@ $page_header = "Medicine Updation ";
         if (!empty($medicine_name) && !empty($images) && !empty($company) && !empty($price) && !empty($description)){
 
 
-            $sql = "UPDATE products SET `medicine_name` = '$medicine_name', `group` = '$group', `power` = '$power', `images` = '$images', `company` = '$company', `price` = '$price', `description` = '$description' WHERE `id` = '$id'";
+            $sql = "UPDATE products SET `medicine_name` = '$medicine_name', `group` = '$group', `power` = '$power', `images` = '$images', `company` = '$company', `price` = '$price',`exp_date` = '$exp_date',  `description` = '$description' WHERE `id` = '$id'";
 
             if($db->query($sql)){
                 $msg = "Updated Successfully!";
@@ -105,6 +106,11 @@ $page_header = "Medicine Updation ";
                         <div class="form-group">
                             <label for="">Price</label>
                             <input type="text" value="<?= $data['price'] ?>" name="price" class="form-control" id="description"  placeholder="Enter Price"  >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Expair Date</label>
+                            <input type="text" value="<?= $data['exp_date'] ?>" name="exp_date" class="form-control" id="description"  placeholder="Enter Expair Date"  >
                         </div>
 
                         <div class="form-group">

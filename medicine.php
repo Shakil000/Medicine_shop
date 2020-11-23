@@ -72,7 +72,7 @@
                                 <div class="shopping-card">
                                     <i class="fa fa-shopping-cart"></i>
                                     
-                                </div>klfijwo;
+                                </div>
                                 <a href="cart-list.php">Shopping Cart</a>
                             </div>
                         </div>
@@ -149,6 +149,7 @@
                         <p class="card-text">Group: <?= $data['group']?></p>
                         <p class="card-text">Company: <?= $data['company']?></p>
                         <p class="card-text">Price:<b>&#2547;</b> <?= $data['price']?></p>
+                        <p class="card-text">Expair Date: <?= $data['exp_date']?></p>
                         <form style="display: inline;" method="post" action="carts.php?id=<?= $data['id']?>">
                             <input type="number" name="quantity" style="padding: 5px;width: 60%;font-size: 15px" placeholder="quantity" required><br>
                             <input type="hidden" name="price" value="<?= $data['price']?>">

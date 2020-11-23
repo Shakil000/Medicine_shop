@@ -23,9 +23,9 @@ include 'includes/header.php';
                             <th>Medicine Name</th>
                             <th>Medicine Group</th>
                             <th>Power</th>
-                            
                             <th>Company</th>
                             <th>Price/Piece</th>
+                            <th>Expair Date</th>
                             <th>Description</th>
                     
                             <th class="text-right">Action</th>
@@ -41,11 +41,10 @@ include 'includes/header.php';
                             <td><?= $data['medicine_name'] ?></td>
                             <td><?= $data['group'] ?></td>
                             <td><?= $data['power'] ?></td>
-                            
                             <td><?= $data['company'] ?></td>
                             <td><?= $data['price'] ?></td>
+                            <td><?= $data['exp_date'] ?></td>
                             <td><?= $data['description'] ?></td>
-                           
                             <td><span class="badge bg-red"></span></td>
                             <td class="text-center">
                                 <a href="medicine-edit.php?edit=<?= $data['id']?>"><i class="fa fa-edit" style="font-size: 24px"></i></a>
