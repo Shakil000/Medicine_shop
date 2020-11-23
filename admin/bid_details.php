@@ -56,7 +56,7 @@ include '../config/db.php';
                         <tbody>
                         <?php
                         $i = 1;
-                            while($row=mysqli_fetch_array ($sql)){
+                        while($row=mysqli_fetch_array ($sql)){
                             ?>
                                 <tr>
                                     <td><?php echo $i++ ?></td>
